@@ -1,0 +1,22 @@
+package day6;
+
+public class kadance2 {
+
+	public static void main(String[] args) {
+		int[] profit = {10,20,30,40,50};
+		int currentprofit=0;
+		int bestprofit = 0;
+		for (int i=0; i< profit.length;i++) {
+			currentprofit = currentprofit + profit[i];
+			if(currentprofit < 0) {
+				currentprofit = 0;
+			}
+			if(currentprofit > bestprofit) {
+				bestprofit = currentprofit;
+			}
+		}
+		System.out.println("Maximum profit = " + bestprofit);
+
+	}
+
+}
