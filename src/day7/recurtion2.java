@@ -1,0 +1,18 @@
+package day7;
+
+public class recurtion2 {
+	static void count(int n) {
+	    if(n==0) {
+		   return;	
+	}
+	System.out.println(n);
+	count(n-1);
+	}
+	public static void main(String[] args) {
+		System.out.println("adsds");
+		count(5);
+		System.out.println("wewewe");
+	}
+}
+
+
